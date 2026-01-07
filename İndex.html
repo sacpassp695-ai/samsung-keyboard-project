@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 2010 Samsung Klavye Görünümü (Retro Style) */
+        body {
+            background-color: #2c2c2c;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .keyboard-container {
+            background: linear-gradient(to bottom, #4a4a4a, #1a1a1a);
+            padding: 10px 5px;
+            width: 100%;
+            border-top: 2px solid #555;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .key {
+            background: linear-gradient(to bottom, #fdfdfd, #d1d1d1);
+            border: 1px solid #000;
+            border-radius: 5px;
+            margin: 0 3px;
+            padding: 15px 0;
+            width: 9%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+            cursor: pointer;
+        }
+
+        .key:active {
+            background: #888;
+            box-shadow: inset 0 2px 5px #333;
+            transform: translateY(2px);
+        }
+
+        /* Özel Tuşlar (Shift, Silme, Boşluk) */
+        .special-key {
+            background: linear-gradient(to bottom, #a5a5a5, #7a7a7a);
+            width: 14%;
+            font-size: 14px;
+        }
+
+        .space-key {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="keyboard-container">
+    <div class="row">
+        <div class="key">Q</div><div class="key">W</div><div class="key">E</div>
+        <div class="key">R</div><div class="key">T</div><div class="key">Y</div>
+        <div class="key">U</div><div class="key">I</div><div class="key">O</div>
+        <div class="key">P</div>
+    </div>
+
+    <div class="row">
+        <div class="key">A</div><div class="key">S</div><div class="key">D</div>
+        <div class="key">F</div><div class="key">G</div><div class="key">H</div>
+        <div class="key">J</div><div class="key">K</div><div class="key">L</div>
+    </div>
+
+    <div class="row">
+        <div class="key special-key">SHIFT</div>
+        <div class="key">Z</div><div class="key">X</div><div class="key">C</div>
+        <div class="key">V</div><div class="key">B</div><div class="key">N</div>
+        <div class="key">M</div>
+        <div class="key special-key">DEL</div>
+    </div>
+
+    <div class="row">
+        <div class="key special-key">?123</div>
+        <div class="key space-key">BOŞLUK</div>
+        <div class="key special-key">GİT</div>
+    </div>
+</div>
+
+</body>
+</html>
